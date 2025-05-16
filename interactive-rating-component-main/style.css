@@ -1,0 +1,175 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass";
+  /* height: 100vh; */
+  /* justify-content: center; */
+  /* display: flex; */
+  /* align-items: center; */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+.container {
+  /* background-color: aqua; */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+}
+.main {
+  overflow: hidden;
+  position: absolute;
+  height: 416px;
+  max-width: 416px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 30px;
+}
+.main .show {
+  /* position: relative; */
+  top: 0;
+  transition: transform 500ms, opacity 500ms, visibility 500ms;
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  height: 416px;
+  max-width: 416px;
+  margin: auto;
+  /* background-color: hsl(213, 19%, 18%); */
+  border-radius: 30px;
+}
+.main img[alt="star"] {
+  width: 25px;
+  background-color: hsl(214, 13%, 10%);
+  border-radius: 50%;
+  padding: 14px;
+  box-sizing: unset;
+}
+.main .rating h2 {
+  color: white;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+.main .rating p {
+  color: hsl(217, 12%, 63%);
+  margin-bottom: auto;
+}
+.main .rating {
+  flex-grow: 22px;
+  margin-top: 30px;
+  height: 100%;
+  /* background-color: antiquewhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+.main .rating .rateHere {
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-between;
+}
+.main .rating .rateHere button {
+  border-radius: 30px;
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: hsl(217, 12%, 63%);
+  cursor: pointer;
+  color: white;
+}
+
+/*-------- Thnkyou page  */
+.main .show .inner_box {
+  color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .show .inner_box img[alt="thankyou"] {
+  width: 50%;
+}
+
+.main .show .inner_box p {
+  color: hsl(25, 100%, 49%);
+  background-color: hsl(220, 3%, 22%);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  border: none;
+  margin-top: 35px;
+  width: 60%;
+  height: 30px;
+  font-size: clamp(0.7rem, 4vw, 1rem);
+}
+
+.main .show .inner_box h2 {
+  margin-top: 30px;
+}
+
+.main .rating .rateHere button:hover {
+  background-color: rgba(243, 155, 73, 0.696);
+}
+.main .rating .rateHere button:focus {
+  background-color: hsl(25, 97%, 53%);
+}
+.main .rating .sbt {
+  background-color: hsl(25, 97%, 53%);
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.main .rating .sbt:focus {
+  background-color: hsl(0, 0%, 100%);
+  height: 42px;
+  border-radius: 20px;
+  border: none;
+}
+.hide {
+  pointer-events: none;
+  visibility: hidden;
+  transform: translateX(-30%);
+  opacity: 0%;
+}
+.set{
+  position: absolute;
+}
+.container .main .rateHere .btnStaticColor{
+  background-color:hsl(25, 97%, 53%) ;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-color: aqua;
+    padding: 20px;
+  }
+
+  .main .rating h2 {
+    color: white;
+    margin-top: 0px;
+  }
+
+  .main .rating .rateHere button {
+    width: 40px;
+    height: 40px;
+  }
+  .main .rating p {
+    color: hsl(217, 12%, 63%);
+    margin-bottom: auto;
+    font-size: 14px;
+  }
+}
