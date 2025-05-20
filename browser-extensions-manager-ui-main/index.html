@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Browser extensions manager UI</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <main class="container .light-mode">
+      <div class="head">
+        <img src="./assets/images/logo.svg" alt="logo" />
+        <img src="./assets/images/icon-sun.svg" alt="dark-light" />
+      </div>
+      <div class="filter">
+        <h1>Extensions List</h1>
+        <div class="controls">
+          <button class="btn Active" onclick="filter('All')">All</button>
+          <button class="btn" onclick="filter('Active')">Active</button>
+          <button class="btn" onclick="filter('Inactive')">Inactive</button>
+        </div>
+      </div>
+      <div class="gridcontainer">
+        <!-- <div class="e1">
+          <div class="header">
+            <img src="./assets/images/logo-devlens.svg" alt="DevLens" />
+            <div class="txt">
+              <h3>DevLens</h3>
+              <p>
+                Quickly inspect page layouts and visualize element boundaries.
+              </p>
+            </div>
+          </div>
+          <div class="btns">
+            <button class="btn">Remove</button>
+            <label class="switch">
+              <input type="checkbox" onchange="changeState()" />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div> -->
+      </div>
+    </main>
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+</html>

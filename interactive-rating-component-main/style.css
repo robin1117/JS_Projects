@@ -21,10 +21,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
   width: 100%;
 }
 .main {
+  margin: 16px;
   overflow: hidden;
   position: absolute;
   height: 416px;
@@ -154,7 +154,7 @@ body {
 
 @media (max-width: 375px) {
   body {
-    background-color: aqua;
+    /* background-color: aqua; */
     padding: 20px;
   }
 
