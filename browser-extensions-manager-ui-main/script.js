@@ -54,8 +54,8 @@ function render(data) {
               </label>
             </div>
           </div>`;
-        });
-        gridContainer.innerHTML = e1;
+    });
+    gridContainer.innerHTML = e1;
     // gridContainer.innerHTML = "Kuch to hey";
   } else {
     gridContainer.innerHTML = "";
@@ -95,10 +95,19 @@ function filter(type) {
   }
 }
 
-// const toggleBtn = document.querySelector('img[alt="dark-light"]');
-// const body = document.body;
+const toggleBtn = document.querySelector('img[alt="dark-light"]');
+const body = document.body;
 
-// toggleBtn.addEventListener('click', () => {
-//   body.classList.toggle('light-mode');
-//   body.classList.toggle('dark-mode');
-// });
+let bool = true;
+toggleBtn.addEventListener("click", () => {
+  body.classList.toggle("light");
+  if (bool) {
+    toggleBtn.src = "./assets/images/icon-moon.svg";
+    console.log(bool);
+    bool = !bool;
+  } else {
+    toggleBtn.src = "./assets/images/icon-sun.svg";
+    bool = !bool;
+    console.log(bool);
+  }
+});

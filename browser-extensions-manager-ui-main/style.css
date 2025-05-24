@@ -208,11 +208,48 @@ input:checked + .slider:before {
   transform: translateX(20px);
 }
 
-.filter .controls .Active{
+ .filter .controls .Active{
   background-color: hsl(3, 71%, 56%);
 }
 
+
 /*---------------------- light mode  */
+body.light{
+background-color: hsl(217, 61%, 90%);
+}
+body.light .head{
+  color: black;
+background-color: white;
+}
+body.light .head img[alt="logo"]{
+ mix-blend-mode: difference;
+}
+
+body.light .filter{
+  color: black;
+}
+body.light .filter .controls .btn{
+  color: black;
+  background-color: aliceblue;
+}
+body.light .filter .controls .btn:hover{
+  color: rgb(255, 255, 255);
+  background-color: hsl(3, 71%, 56%);
+}
+body.light .gridcontainer .e1{
+  color: black;
+  background-color: aliceblue;
+}
+body.light .gridcontainer .e1 .btns .btn{
+  color: black;
+  background-color: aliceblue;
+}
+
+body.light .filter .controls .Active
+ {
+    background-color: hsl(3, 71%, 56%);
+}
+
 
 /* --------------Require Light mod------------------- */
 
