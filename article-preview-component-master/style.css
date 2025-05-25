@@ -1,0 +1,176 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  box-sizing: border-box;
+  padding: 16px;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  width: 100%;
+  max-width: 732px;
+  height: 280px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.container .photo {
+  width: 50%;
+  background-color: aquamarine;
+  /* border-radius: 16px; */
+  /* border-bottom-left-radius: 16px; */
+  /* border-top-left-radius: 16px; */
+  /* height: 165px; */
+  /* overflow: hidden; */
+}
+
+.container img[alt="drawer"] {
+  object-position: center;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.container .data {
+  width: 50%;
+  /* background-color: aquamarine; */
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-inline: 16px;
+}
+
+.container .data img {
+  /* width: 20%; */
+}
+
+.container .data .profile .main {
+  gap: 8px;
+  display: flex;
+  font-size: 0.7rem;
+  /* background-color: rgb(183, 255, 0); */
+  align-items: center;
+}
+
+.container .data .profile .main img[alt="profile"] {
+  width: 46px;
+  height: 46px;
+  border-radius: 50px;
+}
+
+.container .data .profile {
+  position: relative;
+  /* background-color: aquamarine; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.5rem;
+}
+.container .data .profile img {
+  object-fit: contain;
+  margin-left: auto;
+  /* background-color: black; */
+  width: 30px;
+  /* height: 26px; */
+}
+
+.OuterConatianer{
+
+position: relative;
+}
+
+.tooltip {
+  overflow: visible;
+  color: white;
+  position: absolute;
+  right: -52px;
+  border-radius: 15px;
+  bottom: 69px;
+  background-color: hsl(217, 19%, 35%);
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  gap: 15px;
+  height: 60px;
+  opacity: 100%;
+
+  /* width: fit-content; */
+}
+.tooltip::after {
+  content: "";
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  bottom: -11px;
+  left: 105px;
+  width: 22px;
+  height: 22px;
+  transform: rotate(45deg);
+}
+.tooltip p {
+  font-size: large;
+}
+.tooltip img {
+  height: 20px;
+}
+
+.hide {
+  /* transition: opa; */
+  transition: opacity 1s;
+  opacity: 0%;
+}
+@media (max-width: 600px) {
+  body {
+    /* background-color: aqua; */
+  }
+  .container {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height:unset;
+    border-radius: 15px;
+    /* overflow: hidden; */
+  }
+  .container .data {
+    width: unset;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-inline: 16px;
+    gap: 16px;
+    padding: 16px;
+  }
+  .container img[alt="drawer"] {
+    object-position: center;
+    object-fit: cover;
+    width: unset;
+    height: 100%;
+  }
+
+  .container .photo {
+    /* width: 50%; */
+    background-color: white;
+    /* border-radius: 16px; */
+    /* border-bottom-left-radius: 16px; */
+    /* border-top-left-radius: 16px; */
+    height: 400px;
+    /* overflow: hidden; */
+  }
+}

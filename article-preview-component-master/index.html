@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <script src="./script.js" defer></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Article preview component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      position: absolute;
+      bottom: 15px;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="OuterConatianer">
+    <div class="container">
+      <div class="photo">
+        <img src="./images/drawers.jpg" alt="drawer">
+      </div>
+      <div class="data">
+        <h3> Shift the overall look and feel by adding these wonderful
+          touches to furniture in your home</h3>
+        <p> Ever been in a room and felt like something was missing? Perhaps
+          it felt slightly bare and uninviting. I’ve got some simple tips
+          to help you make any room feel complete.</p>
+        <div class="profile">
+          <div class="main">
+            <img src="./images/avatar-michelle.jpg" alt="profile">
+            <div>
+              <h3>Michelle Appleton</h3>
+              <p>28 Jun 2020</p>
+            </div>
+          </div>
+          <img src="./images/icon-share.svg" alt="share" onmouseleave="share(this)" onmouseover="share(this)">
+        </div>
+      </div>
+    </div>
+    <div class="tooltip hide">
+      <p>SHARE</p>
+      <img src="./images/icon-facebook.svg" alt="Face">
+      <img src="./images/icon-twitter.svg" alt="icon-twitter">
+      <img src="./images/icon-pinterest.svg" alt="pin" srcset="">
+    </div>
+  </div>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="">Robin Singh</a>.
+  </div>
+</body>
+
+</html>
