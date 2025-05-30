@@ -1,0 +1,180 @@
+body .conatiner {
+  background-color: aquamarine;
+  width: 100%;
+}
+.container h1 span {
+  text-wrap: nowrap;
+  background: -webkit-linear-gradient(
+    45deg,
+    hsl(7, 86%, 67%),
+    hsl(0, 0%, 100%)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ticket-main p {
+  font-size: 1.2rem;
+}
+.ticket-main p span {
+  color: hsl(7, 88%, 67%);
+}
+
+.ticket-container {
+  position: relative;
+  margin-top: 100px;
+  /* background-color: rgba(173, 104, 146, 0.331); */
+}
+.ticket-container img {
+  width: 100%;
+  /* margin-top: 100px; */
+  /* background-color: rgba(173, 104, 146, 0.331); */
+}
+
+/* below progile */
+.ticket-profile {
+  text-align: left;
+  display: flex;
+  position: absolute;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  left: 20px;
+}
+.ticket-profile img {
+  object-fit: cover;
+  object-position: top;
+  height: 90px;
+  width: 90px;
+  border-radius: 10px;
+}
+.ticket-profile h4 {
+  font-size: 1.9rem;
+}
+.ticket-profile p {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+/* upper logo */
+.ticket-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.ticket-logo img[alt="ticket-logo"] {
+  width: 300px;
+  /* background-color: aqua; */
+}
+.ticket-logo p {
+  font-size: 1.2rem;
+  text-align: right;
+  /* background-color: aqua; */
+}
+
+/* righter id */
+.ticket-id {
+  font-size: 2rem;
+  transform: rotate(90deg);
+  position: absolute;
+  right: 0px;
+  top: 43%;
+}
+
+@media (min-width: 400px) and (max-width: 630px) {
+  .ticket-logo img[alt="ticket-logo"] {
+    width: 250px;
+    /* background-color: aqua; */
+  }
+  .ticket-profile img {
+    object-fit: cover;
+    object-position: top;
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+  }
+  .ticket-logo p {
+    font-size: 1rem;
+    text-align: right;
+    /* background-color: aqua; */
+  }
+  .ticket-id {
+    font-size: 1.3rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0px;
+    top: 43%;
+  }
+    .ticket-profile h4 {
+  font-size: 1.3rem;
+}
+.ticket-profile p {
+  margin-top: 5px;
+  font-size: 0.8rem;
+}
+
+}
+
+@media (max-width: 400px) {
+  body {
+    /* background-color: aqua; */
+    background-image: url("./assets/images/background-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    /* background-color: antiquewhite; */
+  }
+  .container {
+    padding: 15px;
+    gap: 15px;
+    color: white;
+  }
+  body img[alt="backImg"] {
+    display: none;
+  }
+  .ticket-id {
+    font-size: 1rem;
+    transform: rotate(90deg);
+    position: absolute;
+    right: 0px;
+    top: 43%;
+  }
+
+  .ticket-logo img[alt="ticket-logo"] {
+    width: 150px;
+
+    /* background-color: aqua; */
+  }
+  .ticket-profile img {
+    object-fit: cover;
+    object-position: top;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
+  }
+  .ticket-logo p {
+    font-size: 0.7rem;
+    text-align: right;
+    /* background-color: aqua; */
+  }
+  .ticket-profile h4 {
+  font-size: 1.2rem;
+}
+.ticket-profile p {
+  margin-top: 0px;
+  font-size: 0.7rem;
+}
+.ticket-profile {
+  text-align: left;
+  display: flex;
+  position: absolute;
+  gap: 8px;
+  justify-content: center;
+  align-items: center;
+  bottom: 20px;
+  left: 20px;
+}
+}

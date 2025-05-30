@@ -1,0 +1,186 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(0, 0, 0);
+    background-image: url(./assets/images/background-desktop.png);
+    font-family: Inconsolata;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 20px;
+    height: 100vh;
+    padding: 16px;
+    position: relative;
+
+}
+
+body img[alt="chuter"] {
+  background-position: bottom;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  width: 50%;
+}
+body img[alt="uperchuter"] {
+  width: 50%;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Outer container  */
+.container {
+  z-index: 0;
+  max-width: 660px;
+  /* background-color: aqua; */
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 36px;
+  gap: 26px;
+  color: white;
+}
+.container img[alt="logo"] {
+  width: 100%;
+  max-width: 200px;
+}
+.container h1 {
+  font-size: 3rem;
+  /* background-color: antiquewhite; */
+}
+.container p {
+  font-size: 1rem;
+  /* cursor: none; */
+  pointer-events: none;
+}
+
+/* form */
+.main {
+  /* background-color: rgb(156, 255, 255); */
+  max-width: 385px;
+  width: 100%;
+}
+.main img[alt="upload"] {
+  /* background-color: rgb(255, 0, 230); */
+  pointer-events: none;
+  width: 50px;
+}
+
+.main .similar {
+  /* background-color: aquamarine; */
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main .similar label {
+  font-size: 1.1rem;
+  margin-right: auto;
+  margin-bottom: 5px;
+}
+.main .similar input {
+  padding-inline: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  height: 39px;
+  /* margin-right: auto; */
+}
+
+input.similar[type="submit"] {
+  height: 39px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+}
+
+.main .upload .box {
+  border-radius: 10px;
+  border: 2px dotted rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  gap: 16px;
+  /* pointer-events: none; */
+}
+.main .upload .box:hover {
+  background-color: rgba(255, 255, 255, 0.226);
+}
+
+.main .upload .box input {
+  display: none;
+}
+
+/* Preview Box Styling */
+
+.upload .prvbox img[alt="preview"] {
+  display: block;
+  margin: auto;
+  object-fit: cover;
+  object-position: top;
+  background-color: brown;
+  width: 80px;
+  height: 80px;
+  border-radius: 16px;
+  margin-bottom: 16px;
+}
+
+.upload .prvbox button {
+  color: white;
+  background-color: hsla(252, 6%, 83%, 0.205);
+  border: none;
+  border-radius: 4px;
+  padding: 5px;
+  pointer-events: auto;
+}
+.upload .prvbox button:hover {
+  text-decoration: 2px underline;
+  line-height: 15px;
+}
+
+.upload .hide {
+  display: none;
+}
+
+@media (max-width: 800px) and (min-width: 1007px) {
+  body {
+    margin-top: 155px;
+    background-color: aqua;
+    background-image: url("./assets/images/background-tablet.png");
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    /* background-color: aqua; */
+    background-image: url("./assets/images/background-mobile.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .container h1 {
+    font-size: 1.5rem;
+    /* background-color: antiquewhite; */
+  }
+  .container {
+    padding: 15px;
+    gap: 15px;
+    color: white;
+  }
+  body img[alt="backImg"] {
+    display: none;
+  }
+}
